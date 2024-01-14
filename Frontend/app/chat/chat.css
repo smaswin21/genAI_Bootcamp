@@ -11,35 +11,9 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-/*a {
-  color: inherit;
-  text-decoration: none;
-}*/
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: 'Helvetica Neue', sans-serif;
-  background: #1D1E20;
-  color: #DADADB;
+  background: #e9fcff; /* Light background color */
+  color: #333333; /* Dark text color */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -52,7 +26,7 @@ body {
 }
 
 .header-section {
-  margin: 30px 0;
+  margin: 30px 0px 50px 0px;
   text-align: center;
 }
 
@@ -68,7 +42,7 @@ body {
 }
 
 .form-section {
-  margin: 30px 0;
+  margin: 30px 0px 50px 0px;
 }
 
 textarea,
@@ -82,11 +56,9 @@ button {
   margin-bottom: 20px;
   padding: 20px;
   font-size: 1rem;
-  font-family: 'Helvetica Neue',
-  sans-serif;
   outline: none;
-  background-color: #343536;
-  color: #DADADB;
+  background-color: #f3f3f3; /* Light background color */
+  color: #333333; /* Dark text color */
   transition: all 0.5s ease-in-out;
 }
 
@@ -97,8 +69,8 @@ button {
 }
 
 .btn {
-  background: #000000;
-  color: #DADADB;
+  background: #000000; /* Dark background color */
+  color: #ffffff; /* Light text color */
   padding: 20px 0;
   font-size: 1.2rem;
   font-weight: 500;
@@ -114,33 +86,23 @@ button {
 
 .hr-line {
   margin: 70px 0 20px;
-  border: 1px solid #343536;
-}
-
-/* .answer-container {
-  overflow: scroll;
-  max-height: 500px;
-} */
-
-.answer-section {
-  margin: 30px 0;
-  position: relative;
+  border: 1px solid #d3d3d3; /* Light border color */
 }
 
 .answer-section .question {
-  background-color: #227cca;
+  background-color: #f0f8ff; /* Light blue background color */
   padding: 20px;
 }
 
-
 .answer-section .answer {
-  background-color: #343536;
+  background-color: #f3f3f3; /* Light background color */
   padding: 20px;
 }
 
 .copy-icon {
   position: absolute;
-  background-color: #000000;
+  background-color: #000000; /* Dark background color */
+  color: #ffffff; /* Light text color */
   width: 50px;
   height: 50px;
   border-radius: 5px;
@@ -166,7 +128,7 @@ button {
 }
 
 .project {
-  border: 1px solid #ccc;
+  border: 1px solid #d3d3d3; /* Light border color */
   border-radius: 5px;
   padding: 20px;
   width: calc(50% - 20px);
@@ -179,4 +141,41 @@ button {
 
 .dashboard h2 {
   margin: 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  height: 60px; /* Adjust height as needed */
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  height: 60px; /* Adjust height as needed */
+  gap: 20px;
+}
+
+button {
+  background-color: #0090aa; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #017c92; /* Darker blue */
 }

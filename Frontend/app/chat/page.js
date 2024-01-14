@@ -3,6 +3,8 @@ import styles from "./chat.css";
 import FormSection from "../components/FormSection";
 import AnswerSection from "../components/AnswerSection";
 
+import Image from "next/image";
+
 import { useState } from "react";
 
 function getData(prompt) {
@@ -45,7 +47,25 @@ export default function Home() {
     <div>
       <div className="header-section">
         <header className="header">
-          <h1>Const-Assist Dashboard</h1>
+          <div></div>
+          <div className="title">
+
+          <Image
+            src="/images/logo.jpeg"
+            alt="Example Image"
+            width={60} // Adjust the width as needed
+            height={60} // Adjust the height as needed
+            priority
+          />
+          <h1>ManagInsight</h1>
+          </div>
+          <Image
+            src="/images/profile.png"
+            alt="Example Image"
+            width={40} // Adjust the width as needed
+            height={40} // Adjust the height as needed
+            priority
+          />
         </header>
       </div>
 
@@ -56,12 +76,24 @@ export default function Home() {
             <h3>Project 1</h3>
             <p>Budget: $100,000</p>
             <p>Deadline: January 31, 2024</p>
+            <button
+              onClick={() => alert("Warning email about project delay sent.")}
+            >
+              Send Delay Warning
+            </button>{" "}
+            {/* This line has been added */}
           </div>
 
           <div className="project">
             <h3>Project 2</h3>
             <p>Budget: $75,000</p>
             <p>Deadline: February 15, 2024</p>
+            <button
+              onClick={() => alert("Warning email about project delay sent.")}
+            >
+              Send Delay Warning
+            </button>{" "}
+            {/* This line has been added */}
           </div>
         </div>
 
